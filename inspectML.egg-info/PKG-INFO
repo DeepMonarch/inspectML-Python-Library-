@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: inspectML
+Version: 0.1.4
+Summary: A lightweight ML evaluation and monitoring toolkit.
+Author-email: Tushar Upadhyay <tusharupadhyay@zohomail.in>
+License: Copyright 2025 Tushar Upadhyay @psychExploiter (github)
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Project-URL: Repository, https://github.com/psycheExploiter/inspectML
+Keywords: machine-learning,ml,model-evaluation,drift-detection,monitoring,xai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: tqdm
+Requires-Dist: psutil
+Provides-Extra: generative
+Requires-Dist: torch; extra == "generative"
+Provides-Extra: plotting
+Requires-Dist: plotly; extra == "plotting"
+Provides-Extra: full
+Requires-Dist: torch; extra == "full"
+Requires-Dist: plotly; extra == "full"
+Dynamic: license-file

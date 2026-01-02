@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.txt
+pyproject.toml
+requirements.txt
+inspectML/__init__.py
+inspectML/utils.py
+inspectML.egg-info/PKG-INFO
+inspectML.egg-info/SOURCES.txt
+inspectML.egg-info/dependency_links.txt
+inspectML.egg-info/requires.txt
+inspectML.egg-info/top_level.txt
+inspectML/core/__init__.py
+inspectML/evaluation/__init__.py
+inspectML/evaluation/classification.py
+inspectML/evaluation/regression.py
+tests/test_basic.py

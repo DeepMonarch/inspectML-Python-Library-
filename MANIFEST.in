@@ -1,0 +1,19 @@
+# Include essential top-level files
+include LICENSE.txt
+include README.md
+include requirements.txt
+
+# Include all package source files
+recursive-include inspectML *.py
+
+# Include any non-code assets (if you add them later)
+recursive-include inspectML *.json *.yaml *.yml *.csv *.txt
+
+# Exclude unwanted cache or build artifacts
+exclude *.pyc
+exclude __pycache__/
+exclude *.pyo
+exclude *.pyd
+exclude build/
+exclude dist/
+exclude *.egg-info/

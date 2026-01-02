@@ -1,0 +1,16 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+tqdm
+psutil
+
+[full]
+torch
+plotly
+
+[generative]
+torch
+
+[plotting]
+plotly

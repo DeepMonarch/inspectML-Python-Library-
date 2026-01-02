@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inspectML"
+version = "0.1.4"
+authors = [
+    { name = "Tushar Upadhyay", email = "tusharupadhyay@zohomail.in" }
+]
+description = "A lightweight ML evaluation and monitoring toolkit."
+readme = "README.md" # Changed to Markdown for better PyPI formatting
+requires-python = ">=3.8"
+license = { file = "LICENSE.txt" } # Keep this to reference the file
+
+# 1. Core Dependencies (lightweight base)
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "scikit-learn",
+    "tqdm",
+    "psutil",
+]
+
+# 2. Add Keywords for Discoverability
+keywords = [
+    "machine-learning",
+    "ml",
+    "model-evaluation",
+    "drift-detection",
+    "monitoring",
+    "xai"
+]
+
+# 3. Add Classifiers for License and Intent
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License", # Assuming your LICENSE.txt is MIT
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Repository = "https://github.com/psycheExploiter/inspectML" # Added your GitHub URL
+
+# 4. Define Optional Dependencies for large packages
+[project.optional-dependencies]
+generative = ["torch"]
+plotting = ["plotly"]
+full = ["torch", "plotly"] # Convenience option for users
