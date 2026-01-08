@@ -9,6 +9,7 @@ from sklearn.metrics import pairwise_distances
 from sklearn.cluster import KMeans
 from sklearn.metrics import pairwise_distances_argmin_min
 
+# Metrics for Evaluation
 
 def SIL(X, labels):
     """Silhouette Score"""
@@ -83,3 +84,4 @@ def VMEAS(y_true, y_pred):
     from sklearn.metrics import v_measure_score
     y_true, y_pred = np.array(y_true), np.array(y_pred)
     return v_measure_score(y_true, y_pred)
+
